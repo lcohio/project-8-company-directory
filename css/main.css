@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    display: block;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#title {
+    text-align: center;
+    color: #5c6c84;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#employee-list {
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+
+.cardWrapper {
+    border: 2px solid #9aa8bc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.userImage {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+}
+
+.userDescription {
+    font-size: .9em;
+    color: #66758c;
+    line-height: 1.3em;
+    padding: 25px 10px 0 10px;
+    text-transform: capitalize;
+
+}
+
+.overlay-reveal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.modal-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+}
+  
+#image-model {
+    width: 170px;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+  
+.modalFullName {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.modalEmail {
+    text-align: center;
+}
+
+.modalCity {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.address {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.modal-content span {
+    color: grey;
+    margin-left: 130px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 760px) {
+    
+    #employee-list {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 1180px) {
+    
+    #employee-list {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+    }
+}
+
+
